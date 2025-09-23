@@ -1,8 +1,9 @@
-[gd_scene load_steps=101 format=3 uid="uid://b2k182psiialm"]
+[gd_scene load_steps=102 format=3 uid="uid://b2k182psiialm"]
 
 [ext_resource type="Script" uid="uid://bhn4x8a0wfg2l" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Texture2D" uid="uid://deo7mmtpns5dg" path="res://player/sword.png" id="2_rkbax"]
 [ext_resource type="Texture2D" uid="uid://cqgkoe7koeue4" path="res://player/spritesheet2.png" id="3_g1dw6"]
+[ext_resource type="Texture2D" uid="uid://bliasx1bca51i" path="res://player/sword2.png" id="3_yw30f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rkbax"]
 atlas = ExtResource("2_rkbax")
@@ -77,27 +78,27 @@ atlas = ExtResource("2_rkbax")
 region = Rect2(640, 3840, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_65viv"]
-atlas = ExtResource("2_rkbax")
+atlas = ExtResource("3_yw30f")
 region = Rect2(0, 3456, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x7c3f"]
-atlas = ExtResource("2_rkbax")
+atlas = ExtResource("3_yw30f")
 region = Rect2(128, 3456, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bjvpn"]
-atlas = ExtResource("2_rkbax")
+atlas = ExtResource("3_yw30f")
 region = Rect2(256, 3456, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s7qer"]
-atlas = ExtResource("2_rkbax")
+atlas = ExtResource("3_yw30f")
 region = Rect2(384, 3456, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g4c7l"]
-atlas = ExtResource("2_rkbax")
+atlas = ExtResource("3_yw30f")
 region = Rect2(512, 3456, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_knn7v"]
-atlas = ExtResource("2_rkbax")
+atlas = ExtResource("3_yw30f")
 region = Rect2(640, 3456, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uw77l"]
@@ -412,7 +413,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack_down",
-"speed": 10.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -435,7 +436,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack_left",
-"speed": 10.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -458,7 +459,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack_right",
-"speed": 10.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -481,7 +482,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack_up",
-"speed": 10.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -510,7 +511,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_down",
-"speed": 9.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -539,7 +540,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_left",
-"speed": 9.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -568,7 +569,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_right",
-"speed": 9.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -597,7 +598,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_up",
-"speed": 9.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -670,7 +671,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_down",
-"speed": 9.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -699,7 +700,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_left",
-"speed": 9.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -728,7 +729,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_right",
-"speed": 9.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -757,7 +758,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_up",
-"speed": 9.0
+"speed": 10.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
@@ -765,6 +766,7 @@ motion_mode = 1
 script = ExtResource("1_rkbax")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_uw77l")
 animation = &"attack_up"

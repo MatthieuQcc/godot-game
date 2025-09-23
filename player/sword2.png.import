@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmixv1qc1lfy4"
-path="res://.godot/imported/spritesheet2 - Copie.png-316466e7a06f3f69934eee6ae1ce7031.ctex"
+uid="uid://bliasx1bca51i"
+path="res://.godot/imported/sword2.png-aa5eb1af0761101856b0c073871c0a4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/spritesheet2 - Copie.png"
-dest_files=["res://.godot/imported/spritesheet2 - Copie.png-316466e7a06f3f69934eee6ae1ce7031.ctex"]
+source_file="res://player/sword2.png"
+dest_files=["res://.godot/imported/sword2.png-aa5eb1af0761101856b0c073871c0a4e.ctex"]
 
 [params]
 
