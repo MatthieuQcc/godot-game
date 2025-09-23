@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://bnb5238t41cti"]
+[gd_scene load_steps=12 format=4 uid="uid://bnb5238t41cti"]
 
 [ext_resource type="PackedScene" uid="uid://b2k182psiialm" path="res://player/player.tscn" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://dqoibkhbhycju" path="res://world/grass_background.png" id="2_fj7yv"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bciu3qbp7wswm" path="res://world/bush.tscn" id="3_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://dbim71ojs8gp7" path="res://world/tree.tscn" id="4_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://dv6aoqi002ifv" path="res://world/dirt_tileset.png" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://bhvldrw2s5ax0" path="res://chat.tscn" id="7_pkg7o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwbse"]
 texture = ExtResource("5_036b0")
@@ -787,3 +788,7 @@ position = Vector2(187, 245)
 
 [node name="Tree2" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(258, 60)
+
+[node name="Chat" parent="." instance=ExtResource("7_pkg7o")]
+position = Vector2(129, 31)
+player = NodePath("../Player")
