@@ -173,4 +173,4 @@ animation = &"idle_down"
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-1.4901161e-08, 5.0000005)
 scale = Vector2(1.0555556, 0.97697365)
-polygon = PackedVector2Array(-1.7052634, -2.3936028, -9, 1, -6, 7, -2, 8, 3, 9, 6, 7, 8, 3, 9, -4)
+polygon = PackedVector2Array(-1.5789473, -10.235691, -6.315789, -1.7059491, -1.5789473, 10.235691, 4.736842, -1.7059491)
