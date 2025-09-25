@@ -766,18 +766,42 @@ motion_mode = 1
 script = ExtResource("1_rkbax")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -2)
+position = Vector2(0.20000076, -10.799999)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_uw77l")
-animation = &"attack_up"
+animation = &"attack_right"
+frame = 5
+frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -6)
+position = Vector2(0, -5)
 process_callback = 0
 position_smoothing_enabled = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(1, -16)
-polygon = PackedVector2Array(-1, 37, -8, 16, -1, 6, 6, 17)
+position = Vector2(1.2000008, -17.8)
+polygon = PackedVector2Array(-1, 24, -6, 14, -1, 6, 4, 14)
+
+[node name="HitBoxes" type="Node2D" parent="."]
+
+[node name="AttackRight" type="CollisionPolygon2D" parent="HitBoxes"]
+position = Vector2(-9.049999, -2.0826359)
+scale = Vector2(1.1250001, 1.0034723)
+polygon = PackedVector2Array(-23, -23, -5, -23, -5, 13, -23, 13)
+
+[node name="AttackUp" type="CollisionPolygon2D" parent="HitBoxes"]
+position = Vector2(0, 3.3005717)
+scale = Vector2(1, 1.2102275)
+polygon = PackedVector2Array(-14, -30, -14, -19, 22, -19, 22, -30)
+
+[node name="AttackLeft" type="CollisionPolygon2D" parent="HitBoxes"]
+position = Vector2(49.112503, -3.1507607)
+scale = Vector2(1.2291667, 0.8887195)
+polygon = PackedVector2Array(-30, -25, -30, 16, -12, 16, -12, -25)
+
+[node name="AttackDown" type="CollisionPolygon2D" parent="HitBoxes"]
+position = Vector2(1, -3)
+scale = Vector2(0.6917233, 0.86458343)
+polygon = PackedVector2Array(29, 11, 29, 23, -24, 23, -24, 11)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -168,9 +168,10 @@ script = ExtResource("1_yj8al")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_yxbw5")
-animation = &"idle_down"
+animation = &"walk_down"
+frame_progress = 0.94082266
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-1.4901161e-08, 5.0000005)
-scale = Vector2(1.0555556, 0.97697365)
-polygon = PackedVector2Array(-1.5789473, -10.235691, -6.315789, -1.7059491, -1.5789473, 10.235691, 4.736842, -1.7059491)
+position = Vector2(0, 8.333333)
+scale = Vector2(0.7055785, 0.65032184)
+polygon = PackedVector2Array(-9.448511, -7.688499, -9.448511, 7.6885004, 7.0863833, 7.6884995, 7.0863833, -7.6885004)

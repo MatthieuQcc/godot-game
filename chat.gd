@@ -7,7 +7,7 @@ const WALK_SPEED = 30
 const RUN_SPEED = 60
 const STOP_DISTANCE = 40       # distance mini → le chat s'arrête
 const FOLLOW_DISTANCE = 80     # distance maxi → si le joueur est plus loin, le chat se met à courir
-const DIAGONAL_TOLERANCE = 0.4
+const DIAGONAL_TOLERANCE = 0.8
 
 var last_dir: Vector2 = Vector2.DOWN
 

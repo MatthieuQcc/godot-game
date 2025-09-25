@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://bnb5238t41cti"]
+[gd_scene load_steps=13 format=4 uid="uid://bnb5238t41cti"]
 
 [ext_resource type="PackedScene" uid="uid://b2k182psiialm" path="res://player/player.tscn" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://dqoibkhbhycju" path="res://world/grass_background.png" id="2_fj7yv"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dbim71ojs8gp7" path="res://world/tree.tscn" id="4_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://dv6aoqi002ifv" path="res://world/dirt_tileset.png" id="5_036b0"]
 [ext_resource type="PackedScene" uid="uid://bhvldrw2s5ax0" path="res://chat.tscn" id="7_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://bdwybrom3s0cc" path="res://world/grass.tscn" id="8_gbfbk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwbse"]
 texture = ExtResource("5_036b0")
@@ -792,3 +793,27 @@ position = Vector2(258, 60)
 [node name="Chat" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_pkg7o")]
 position = Vector2(129, 31)
 player = NodePath("../Player")
+
+[node name="Grass" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(108, 111)
+
+[node name="Grass3" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(108, 128)
+
+[node name="Grass5" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(104, 247)
+
+[node name="Grass6" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(138, 247)
+
+[node name="Grass8" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(155, 247)
+
+[node name="Grass7" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(121, 247)
+
+[node name="Grass4" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(126, 128)
+
+[node name="Grass2" parent="." instance=ExtResource("8_gbfbk")]
+position = Vector2(126, 111)
