@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://bhvldrw2s5ax0"]
+[gd_scene load_steps=23 format=3 uid="uid://bhvldrw2s5ax0"]
 
 [ext_resource type="Texture2D" uid="uid://bmt87nbgt5nvc" path="res://chat.png" id="1_dg5i7"]
 [ext_resource type="Script" uid="uid://b8qugpgv01pru" path="res://chat.gd" id="1_yj8al"]
+[ext_resource type="Texture2D" uid="uid://cb0rr00bx72yi" path="res://shadows/large_shadow.png" id="3_t67cl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_47tmm"]
 atlas = ExtResource("1_dg5i7")
@@ -174,4 +175,12 @@ frame_progress = 0.94082266
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(0, 8.333333)
 scale = Vector2(0.7055785, 0.65032184)
-polygon = PackedVector2Array(-9.448511, -7.688499, -9.448511, 7.6885004, 7.0863833, 7.6884995, 7.0863833, -7.6885004)
+polygon = PackedVector2Array(-9.448511, -7.688499, -9.448511, 5.1256657, 0, 7.6884995, 7.0863833, 5.1256657, 7.0863833, -7.6885004)
+
+[node name="ShadowSprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-1.2499998, 11.666667)
+scale = Vector2(0.54687506, 0.6083334)
+texture = ExtResource("3_t67cl")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]

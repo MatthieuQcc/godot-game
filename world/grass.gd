@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var area_2d: Area2D = $Area2D
 
+const GRASS_EFFECT = preload("res://effects/grass_effect.tscn")
 
 func _ready() -> void:
 	area_2d.area_entered.connect(_on_area_2d_area_entered)
@@ -9,5 +10,8 @@ func _ready() -> void:
 
 
 func _on_area_2d_area_entered(other_area_2d: Area2D) -> void:
-	queue_free()
-	print("grass area entered")
+	if other_area_2d.name.begins_with("Attack"):
+		var grass_effect_instance = GRASS_EFFECT.instantiate()
+		get_tree().current_scene.add_child(grass_effect_instance)
+		grass_effect_instance.global_position = global_position
+		queue_free()
