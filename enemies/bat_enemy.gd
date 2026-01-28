@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const DISTANCE_PLAYER = 30
-const FLY_SPEED = 20
+const FLY_SPEED = 35
 const INVULNERABLE_TIME = 0.3  # Durée d’invulnérabilité après un coup
 const KNOCKBACK_FORCE = 200   # Force du recul, à ajuster
 const FLASH_DURATION = 0.2     # Durée du flash rouge
